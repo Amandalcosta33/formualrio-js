@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1> Formulário</h1>
+            <fieldset>
+                <legend> Dados Pessoais</legend>
+                <label for="nome-e-sobrenome">Nome:</label>
+                <input class="campo-padrao" name="nome-e-sobrenome" id="nome-e-sobrenome">
+
+                <label for="Endereço">Endereço:</label>
+                <input class="campo-padrao" name="Endereço" id="Endereço">
+
+                <label for="Cidade">Cidade:</label>
+                <input class="campo-padrao" name="Cidade" id="Cidade">
+
+                <label for="uf">Estado</label>
+                <select name="uf" id="uf">
+                    <option value="sp">SP</option>
+                    <option value="rj" selected>RJ</option>
+                    <option value="es">ES</option>
+                    <option value="mg">MG</option>
+
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend> Dados Profissionais</legend>
+                <legend>Natureza do cargo</legend>
+                <label for="gerencia">
+                    <input type="radio" id="gerencia" name="gerencia" >
+                 Gêrencia
+                </label>
+
+                <label for="financeiro">
+                    <input type="radio" id="financeiro" name="financeiro" >
+                    Financeiro
+                </label>
+
+                <label for="Recepção">
+                        <input type="radio" id="Recepção" name="Recepção" >
+                        Recepção
+                </label>
+
+                <label for="Administrativo">
+                            <input type="radio" id="Administrativo" name="Administrativo" >
+                            Administrativo
+                </label>
+
+                <label for="Juridico">
+                        <input type="radio" id="Juridico" name="Juridico" >
+                        Juridico
+                    </label>
+
+                    <legend>Area de interesse</legend>
+                    <label for="computação">
+                        <input type="radio" id="computação" name="computação" >
+                     computação
+                    </label>
+    
+                    <label for="Biologia">
+                        <input type="radio" id="Biologia" name="Biologia" >
+                        Biologia
+                    </label>
+    
+                    <label for="Meio-Ambiente">
+                            <input type="radio" id="Meio-Ambiente" name="Meio-Ambiente" >
+                            Meio Ambiente
+                    </label>
+    
+                    <label for="Engenharia">
+                                <input type="radio" id="Engenharia" name="Engenharia" >
+                                Engenharia
+                    </label>
+    
+                    <label for="Historia"">
+                            <input type="radio" id="Historia" name="Historia" >
+                        Historia
+                        </label>
+
+                        <label for="obs">Mini currículo</label>
+                        <textarea name="obs" id="obs"></textarea>
+                        <input class="botao" type="submit">
+            <input class="botao" type="reset" value="Limpar">
+            </fieldset>
