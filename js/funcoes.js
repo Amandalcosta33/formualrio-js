@@ -19,3 +19,33 @@ function CalcularMedia(){
 
     document.getElementById("resultado").innerHTML = media;
 }
+
+function InserirNaLista(){
+    let nome, telefone, email;
+
+    nome=document.querySelector("#nome").value;
+    telefone=document.querySelector("#telefone").value;
+    email=document.querySelector("#email").value;
+
+    console.log(nome);
+    console.log(telefone);
+    console.log(email);
+
+    let  tabela= document.querySelector (".tabela-clientes").innerHTML;
+    document.querySelector(".tabela-clientes").innerHTML += "<tr>" + "<td>" + nome + "</td>"+"<td>" +telefone + "</td>" + "<td>" +email +"</td>"+ "</tr>";
+
+    Apagar();
+
+    document.querySelector(".mensagem").innerHTML = "<em> Cliente cadastrado com sucesso </em>"
+}
+
+function Apagar(){
+        document.querySelector('nome').value="";
+        document.querySelector('telefone').value="";
+        document.querySelector('email').value="";
+}
+
+
+
+
+    
